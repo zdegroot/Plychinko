@@ -8,7 +8,7 @@ public class BallDropper : MonoBehaviour
     void Update()
     {
         // if the left mouse button was pressed
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (Mouse.current.leftButton.wasPressedThisFrame && Game.IsGameStarted())
         {
             DropBall();
         }
